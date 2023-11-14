@@ -1,0 +1,11 @@
+name: test
+
+on: pull_request
+
+
+jobs:
+  test_on_pr:
+    uses: ./.github/workflows/reuse_workflow.yml
+    with:
+      input_1: "test"
+      input_2: 5
