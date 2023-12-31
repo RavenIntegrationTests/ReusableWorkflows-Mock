@@ -1,0 +1,11 @@
+name: test-reusable-ref-v1.0.0
+
+on: pull_request
+
+
+jobs:
+  test_on_pr:
+    uses: RavenIntegrationTests/ReusableWorkflows-Mock/.github/workflows/reuse_workflow.yml@v1.0.0
+    with:
+      input_1: "test"
+      input_2: 5
